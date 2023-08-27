@@ -16,6 +16,9 @@ suite('Functional Tests', function() {
     suite('POST /api/books with title => create book object/expect book object', function() {
 
       test('Test POST /api/books with title', function(done) {
+
+        //If the test fail, add a control time here
+
         chai
           .request(server)
           .post('/api/books')
@@ -153,12 +156,13 @@ suite('Functional Tests', function() {
           });
       });
 
-      after(function() {
-        chai.request(server)
-          .get('/')
-      });
     });
 
+  });
+
+  after(function() {
+    chai.request(server)
+      .get('/')
   });
 
 });
