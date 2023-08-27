@@ -6,10 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/public/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/9eb3d3749b.js" crossorigin="anonymous"></script>
   <style>
     code {
       background-color: whitesmoke;
@@ -17,38 +13,12 @@
   </style>
 </head>
 <body>
-
 <header>
-  <div class="wrap">
-  <i class="fa-regular fa-book-open" style="font-size: 30px; font-weight: bold"></i>
-  <h1 style="font-size: 30px; font-weight: bold">Personal Library</h1>
-  </div>
-  <nav class="navbar">
-    <ul class="navlist">
-      <li class="nav"><a href="#welcome">Home</a></li>
-      <li class="nav"><a href="#test-api">Test API Response</a></li>
-      <li class="nav"><a href="#sample-front-end">Sample Front End</a></li>
-    </ul>
-  </nav>
+  <h1>Personal Library</h1>
 </header>
 <br>
-<div class="wrapper">
- <section id="welcome">
-  <h1>This is a required project for the freeCodeCamp Quality Assurance certification.</h1>
-  <h2>Built by CalicoSquid</h2>
-  <div class="welcome-banner">
-    <h2>Check me out on</h2><br>
-    <div class="button-wrapper">
-      <a href="https://codepen.io/CalicoSquid" class="button-link"><i class="fa-brands fa-codepen logo"></i>Codepen</a>
-      <a href="https://github.com/CalicoSquid" class="button-link"><i class="fa-brands fa-github logo"></i>Github</a>
-      <a href="https://replit.com/@CalicoSquid" class="button-link"><i class="fa-solid fa-laptop-code logo"></i>Replit</a>
-      <a href="https://www.freecodecamp.org/CalicoSquid" class="button-link"><i class="fa-brands fa-free-code-camp logo"></i>Free Code Camp</a>
-    </div>
-  </div>
- </section> 
-<section id="test-api"> 
 <div id ='sampleposting'>
-  <h2>Test API responses</h2>
+  <h2 style="text-align: left">Test API responses</h2>
   <form action="/api/books" method="post" class="border">
     <h4>Test post to /api/books</h4>
     <label for="title" >Book Title</label>
@@ -64,26 +34,23 @@
     <input type="submit" value="Submit">
   </form>
 </div>
-</section> 
-
-<section id="sample-front-end">
-
-  <div id='sampleui'>
-    <h2 style="text-align: left">Sample Front-End</h2>
-    <form id="newBookForm" class="border">
-      <label for="bookTitleToAdd">New Book Title</label>
-      <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick" style="width: 295px">
-      <button type="submit" value="Submit" id="newBook">Submit New Book!</button>
-    </form>
-    <div id='display' style="cursor: pointer"></div>
-    <div id='bookDetail' class='border'>
-      <p id='detailTitle'>Select a book to see it's details and comments</p>
-      <ol id='detailComments'></ol>
-    </div>
-    <button id='deleteAllBooks'>Delete all books...</button>
+<hr style='margin: 50px'>
+<div id='sampleui'>
+  <h2 style="text-align: left">Sample Front-End</h2>
+  <form id="newBookForm" class="border">
+    <label for="bookTitleToAdd">New Book Title</label>
+    <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick" style="width: 295px">
+    <button type="submit" value="Submit" id="newBook">Submit New Book!</button>
+  </form>
+  <div id='display'></div>
+  <div id='bookDetail' class='border'>
+    <p id='detailTitle'>Select a book to see it's details and comments</p>
+    <ol id='detailComments'></ol>
   </div>
-</section>
-</div>  
+  <button id='deleteAllBooks'>Delete all books...</button>
+</div>
+<hr style='margin: 50px'>
+
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"
         integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
         crossorigin="anonymous"></script>
