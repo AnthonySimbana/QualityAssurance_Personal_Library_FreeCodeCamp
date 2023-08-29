@@ -2,7 +2,7 @@
 
 Uncomment the MONGO_URI and NODE_ENV variables
 
-This 2/5 projects to get de Quality Assurance Certification from FreeCodeCamp "Personal Libraryr"
+This 3/5 projects to get de Quality Assurance Certification from FreeCodeCamp "Personal Libraryr"
 
 This is the boilerplate for the Issue Tracker project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/personal-library
 
